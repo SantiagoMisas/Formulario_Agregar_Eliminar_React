@@ -1,6 +1,8 @@
+import {Link} from 'react-router-dom'
+
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-light">
+    <nav className="navbar navbar-expand-lg bg-orange-400 mt-5">
       <div className="container-fluid">
         <a className="navbar-brand" href="">
           Navbar
@@ -8,12 +10,12 @@ const Header = () => {
         <a className="navbar-brand" href="">
           Inicio
         </a>
-        <a className="navbar-brand" href="">
+        <Link className="navbar-brand" href="">
           Clientes
-        </a>
-        <a className="navbar-brand" href="">
+        </Link>
+        <Link to={'/productos'} className="navbar-brand">
           Productos
-        </a>
+        </Link>
         <a className="navbar-brand" href="">
           Proveedores
         </a>

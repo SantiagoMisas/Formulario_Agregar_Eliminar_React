@@ -3,7 +3,7 @@ import ListadoProductos from '../productos/ListadoProductos'
 
 const Home = () => {
   return (
-    <main>
+    <main className='container'>
       <ListadoProductos />
     </main>
   )
